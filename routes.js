@@ -38,9 +38,7 @@ const requestHandler = (req, res) => {
   }
 
   res.write("<html>");
-  res.write("<body><li>");
-  res.write(user);
-  res.write("</li></body>");
+  res.write("<body><li></li></body>");
 
   res.write("</html>");
 };
