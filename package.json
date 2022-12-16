@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-lab",
+  "version": "1.0.0",
+  "description": "lab2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunChan94/NODEJS-LAB.git"
+  },
+  "author": "YunChan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YunChan94/NODEJS-LAB/issues"
+  },
+  "homepage": "https://github.com/YunChan94/NODEJS-LAB#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
