@@ -6,9 +6,9 @@ const requestHandler = (req, res) => {
 
   if (url === "/") {
     res.write("<html>");
-    res.write("<head><title>Enter Username</title></head>");
+    res.write("<head><title>LAB2.1</title></head>");
     res.write(
-      "<body><form action='/users' method='POST'><input type='text' name='users'><button>Send</button></form></body>"
+      "<body><h1>Welcome to my LAB2.1!</h1><form action='/users' method='POST'><input type='text' name='users'><button>Send</button></form></body>"
     );
     res.write("</html>");
     return res.end();
@@ -43,11 +43,8 @@ const requestHandler = (req, res) => {
       console.log(user);
     });
   }
-  //Routes '/'
-  res.write("<html>");
-  res.write("<head><h1>Welcome to my page!</h1></head>");
-  res.write("</html>");
-  res.end();
+
+  // Tra ve trang HTML = page not found
 };
 
 exports.handler = requestHandler;
