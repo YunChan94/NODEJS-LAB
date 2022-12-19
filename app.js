@@ -1,13 +1,17 @@
 const express = require("express");
 
+const path = require("path");
+
 const app = express();
 
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use("/users", (req, res, next) => {
-  res.send("<p>The Middleware that handles just /users</p>");
+  res.sendFile(path.join(__dirname, "views", "users.html"));
 });
 
 app.use("/", (req, res, next) => {
-  res.send("<p>The Middleware that handles just /</p>");
+  res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
 app.listen(3000);
